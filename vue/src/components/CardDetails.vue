@@ -64,21 +64,28 @@ export default {
 </script>
 
 <style>
+
+.card-container {
+    min-width: 35rem;
+}
+
 #card-details-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    flex-wrap: nowrap;
 }
 
 #card-details-term {
-    margin-right: 2rem;
-    width: 6rem;
+    display: block;
+    min-width: 10rem;
+    text-wrap: wrap;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: .1rem solid #E5AC65;
 }
 
 #card-details-definition {
-    display: flex;
-    text-align: right;
+    display: block;
+    text-wrap: wrap;
 }
 
 #card-edit-buttons {
