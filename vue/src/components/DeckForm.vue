@@ -130,6 +130,6 @@ export default {
 
 <style>
 #deck-form-container{
-    margin-top: 9rem;
+    margin-top: 3rem;
 }
 </style>

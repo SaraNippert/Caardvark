@@ -119,7 +119,7 @@ export default {
             console.log('in save of modify deck, cardsToAdd:', cardsToAdd)
 
             cardsToAdd.forEach((card) => {
-                console.log('in ModifyDeck add card', card)
+                console.log('in DragCards add card', card)
                 card.deckId = deckId
                 CardService.addCardToDeck(card)
 
@@ -135,7 +135,7 @@ export default {
 
             })
 
-            console.log('in modifyDeck cardsToDelete', cardsToDelete)
+            console.log('in dragCards cardsToDelete', cardsToDelete)
 
             cardsToDelete.forEach((card) => {
                 card.deckId = deckId

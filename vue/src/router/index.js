@@ -2,7 +2,7 @@ import { createRouter as createRouter, createWebHistory } from 'vue-router'
 import { useStore } from 'vuex'
 
 // Import components
-import AddCardsView from '../views/AddCardsView.vue';
+import ManageCardsView from '../views/ManageCardsView.vue';
 import DeckDetailView from '../views/DeckDetailView.vue';
 import EditDeckView from '../views/EditDeckView.vue';
 import HomeView from '../views/HomeView.vue';
@@ -67,9 +67,9 @@ const routes = [
   },
 
   {
-    path: '/addcards/:deckId',
-    name: 'addcards',
-    component: AddCardsView,
+    path: '/managecards/:deckId',
+    name: 'managecards',
+    component: ManageCardsView,
     meta: {
       requiresAuth: true
     }

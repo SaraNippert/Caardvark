@@ -1,9 +1,9 @@
 <template>
-    <ModifyDeck />
+    <DragDeckCards />
 </template>
 
 <script>
-import ModifyDeck from '../components/ModifyDeck.vue';
+import DragDeckCards from '../components/DragDeckCards.vue';
 import CardService from '../services/CardService.js';
 
 export default {
@@ -14,8 +14,8 @@ export default {
         }
     },
     components: {
-        ModifyDeck,
-    },
+        DragDeckCards
+},
     methods: {
         getCards() {
             CardService.getCardsByDeckId(this.$route.params.deckId)
